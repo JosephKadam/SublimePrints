@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: rgb(24, 83, 39);
+    z-index: 100000;
+    position: fixed;
+}
+
+.nav h2{
+    color: white;
+    font-size: 1.7rem;
+    cursor: default;
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;    
+}
+
+#item li a{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#item li a:hover{
+    color: rgb(130, 151, 144);
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: large;
+}
+
+#item .icon img{
+    color: #fff;
+    padding-right: 0.5px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+#item .icon img:hover{
+    transition: all 0.5s;
+    background-color: rgb(5, 35, 5);
+    height: 25px;
+    width: 25px;
+}
+
+.back{
+background: url(background.jpg);
+height: 100vh;
+width: 100%;
+background-size: cover; 
+
+}
+
+.back .overlay {
+background-color: #171819;
+width: 100%;
+height: 100%;
+opacity: 0.45;
+}
+
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mid p{
+    color: rgb(255, 194, 80);
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+.mid h2{
+    /* color: #ae1b1b; */
+    color: #b40a0a;
+    font-size: 3rem;
+}
+
+.mid .btn{
+margin-top: 2.5rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn a.simple{
+color: #fff;
+font-weight: 500;
+padding: 0.9rem 1.6rem;
+pointer-events: none;
+}
+
+/* .mid .btn a.simple:hover{
+    color: rgb(2, 58, 17);
+    font-size: large;
+    transition: all 0.5s;
+  
+} */
+
+.mid .btn a.bottom{
+    color: whitesmoke;
+    border: 1px solid rgb(2, 58, 17);
+    background-color: rgb(17, 78, 33);
+    border-radius: 15px;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    }
+ 
+.mid .btn a.bottom:hover{
+    padding: 1.1rem 1.9rem;
+    background-color: rgb(7, 31, 14);
+    transition: all 0.5s;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: rgb(161, 125, 35);
+    height: 800px;
+}
+
+.details h3,h6,h5{
+    color: white; 
+}
+
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+
+.details .one p{
+    color: #4b0c0c;
+    font-size: 1.25rem;
+    font-weight: 200;
+    padding-bottom: 3rem;
+}
+
+.details .one a{
+    color: #fff;
+    background: #4b0c0c;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.details .one a:hover{
+    transition: all 0.5s; 
+    background-color: #0d0202;
+}
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #0d0202;
+    padding-left: 4rem;
+}
+
+.details .two h3{
+    font-size: 2.5rem;
+}
+
+.details .two h5{
+    font-size: 1.1rem;
+    color: rgb(15, 13, 13);
+}
+
+.details .two p{
+    font-size: 1.1rem;
+    color: #4b0c0c;
+    margin-bottom: 0.8rem;
+}
+
+.trainer{
+    background: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.trainer .about{
+    width: 40%;
+
+}
+
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.1rem;
+}
+
+.trainer .about p{
+    color: #5d6363;
+    font-size: 1.5rem;
+}
+
+.trainer .people{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.trainer .people .team1{
+    width: 47%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.trainer .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainer .people .team1 .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:  12px 25px;
+}
+
+.trainer .people .team1 .name h4{
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.trainer .people .team1 .pro p{
+    font-size: 1.1rem;
+    color: #212529;
+    padding: 0 25px;
+}
+
+.trainer .people .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.contact{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    height: 652px;
+}
+
+.contact .form{
+    width: 45%;
+}
+
+.contact .form h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%; 
+}
+
+.contact .form .submit{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+} 
+
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+    border: 2px solid black;
+
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background-color: rgb(2, 58, 17);
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 13px 0;
+}
+
+.contact .form .submit a:hover{
+    transition: all 0.5s;
+    border-radius: 15px;
+    background-color: rgb(2, 39, 12);
+}
+
+.contact .map{
+    margin: 5rem 10rem;
+    width: 45%;
+    border-left: 1px solid #0d0202;
+}
+
+.contact .map h2{
+    align-items: center;
+    text-transform: uppercase;
+    color: #171819;
+    padding: 20px;
+}
+.contact .map h3{
+    align-items: center;
+    color: #2d2f31;
+    padding: 20px;
+}
+
+
